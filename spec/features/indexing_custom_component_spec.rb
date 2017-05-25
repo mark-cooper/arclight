@@ -39,8 +39,8 @@ RSpec.describe 'Indexing Custom Component', type: :feature do
           c.to_solr['ref_ssm'] == ['aspace_01daa89087641f7fc9dbd7a10d3f2da9']
         end.to_solr
 
-        expect(doc1['access_subjects_sim']).to eq ['Minutes']
-        expect(doc2['access_subjects_sim']).to eq ['Records']
+        expect(doc1['access_subjects_ssim']).to eq ['Minutes']
+        expect(doc2['access_subjects_ssim']).to eq ['Records']
       end
     end
 
